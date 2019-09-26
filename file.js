@@ -9,4 +9,43 @@ const employees = [
     { id: 99, name: 'lucy'}
   ];
 
+//   const clickBox = document.querySelector('div button');
   
+//   clickBox.addEventListener('click', () =>{
+//     console.log ("i have been clicked")    
+//   });
+
+
+
+demos= document.getElementsByClassName(‘people’);
+
+for (var i = 0; i < demos.length; i++) {
+   demos[i].addEventListener(‘click’,redirect,false);
+}
+
+function redirect(){
+   alert(this.id);
+}
+
+//   const main = document.getElementById('main')
+//   //querySelector('div')
+//   const boxContainer = document.querySelector('div div')
+//   const button = document.querySelector('div button');
+
+//   let boxCount = 0;
+//   const addColoredBox = () => {
+//       boxCount++; 
+//       const box = document.createElement('div');
+//       box.classList.add('box');
+//       box.addEventListener('click', ()=>{
+//           console.log(boxCount);
+
+//           // ev => 
+//       })
+//       boxContainer.appendChild(box);
+//   };
+
+//   button.addEventListener('click', addColoredBox);
+//   button.addEventListener('click', () => {
+//       console.log('Button was clicked')
+//   })
