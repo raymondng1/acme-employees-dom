@@ -7,7 +7,7 @@
 
 }
 
-.box > div {
+div > button {
     border:solid 1px black;
     margin: 5px;
     width:250px;
@@ -16,3 +16,4 @@
     background-color: aqua;
     justify-content: center;
 }
+

@@ -16,16 +16,29 @@ const employees = [
 //   });
 
 
-
-demos= document.getElementsByClassName(‘people’);
+let count = 0;
+demos= document.getElementsByClassName("people");
+nodes= document.getElementsByClassName("div .people");
 
 for (var i = 0; i < demos.length; i++) {
-   demos[i].addEventListener(‘click’,redirect,false);
+   demos[i].addEventListener("click",() =>{
+      count++;
+      console.log(count);
+      console.log("I've been clicked")
+      if (count > 3) {
+         warning();
+      }
+   });
+}
+const warning = () => {
+   alert("You've picked too many!")
 }
 
-function redirect(){
-   alert(this.id);
-}
+
+// const changeColor = () => {
+//    var count = i;
+//    console.log(count);
+// }
 
 //   const main = document.getElementById('main')
 //   //querySelector('div')
